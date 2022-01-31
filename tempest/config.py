@@ -684,8 +684,8 @@ ImageGroup = [
                help=("The endpoint type to use for the alternate image "
                      "service.")),
     cfg.StrOpt('http_image',
-               default='http://download.cirros-cloud.net/0.3.1/'
-               'cirros-0.3.1-x86_64-uec.tar.gz',
+               default='http://download.cirros-cloud.net/0.5.2/'
+               'cirros-0.5.2-x86_64-uec.tar.gz',
                help='http accessible image'),
     cfg.IntOpt('build_timeout',
                default=300,
@@ -1175,7 +1175,7 @@ scenario_group = cfg.OptGroup(name='scenario', title='Scenario Test Options')
 ScenarioGroup = [
     cfg.StrOpt('img_file', deprecated_name='qcow2_img_file',
                default='/opt/stack/new/devstack/files/images'
-               '/cirros-0.3.1-x86_64-disk.img',
+               '/cirros-0.5.2-x86_64-disk.img',
                help='Image full path.'),
     cfg.StrOpt('img_disk_format',
                default='qcow2',
